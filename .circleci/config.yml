@@ -7,7 +7,10 @@ jobs:
       - image: "circleci/golang"
     steps:
       - checkout
-      - run: go run main.go
+      - run: go run 01hello/main.go
+      - run: go run 02variables/main.go
+      - run: go run 03userinput/main.go
+      - run: go run 04conversion/main.go
 
 workflows:
   build_and_test:
